@@ -64,62 +64,66 @@
     {{-- FOOTER --}}
     <footer>
         <div>
-            <section class="container">
-                <section id="links">
-                    <ul>
-                        <li class="list-item">DC COMICS</li>
-                        @php
-                            $dc_comics = config('dc_comics');
-                        @endphp
-                        @foreach ($dc_comics as $link)
-                            <li>{{ $link['text'] }}</li>
-                        @endforeach
-                        <li class="list-item">SHOP</li>
-                        @php
-                            $shop = config('shop');
-                        @endphp
-                        @foreach ($shop as $link)
-                            <li>{{ $link['text'] }}</li>
-                        @endforeach
-                    </ul>
-                    <ul>
-                        <li class="list-item">DC</li>
-                        @php
-                            $dc = config('dc');
-                        @endphp
-                        @foreach ($dc as $link)
-                            <li>
-                                {{ $link['text'] }}
-                            </li>
-                        @endforeach
-                    </ul>
-                    <ul>
-                        <li class="list-item">SITES</li>
-                        @php
-                            $sites = config('sites');
-                        @endphp
-                        @foreach ($sites as $link)
-                            <li>
-                                {{ $link['text'] }}
-                            </li>
-                        @endforeach
-                    </ul>
+            <div class="bg-section">
+                <section class="container">
+                    <section id="links">
+                        <ul>
+                            <li class="list-item">DC COMICS</li>
+                            @php
+                                $dc_comics = config('dc_comics');
+                            @endphp
+                            @foreach ($dc_comics as $link)
+                                <li>{{ $link['text'] }}</li>
+                            @endforeach
+                            <li class="list-item">SHOP</li>
+                            @php
+                                $shop = config('shop');
+                            @endphp
+                            @foreach ($shop as $link)
+                                <li>{{ $link['text'] }}</li>
+                            @endforeach
+                        </ul>
+                        <ul>
+                            <li class="list-item">DC</li>
+                            @php
+                                $dc = config('dc');
+                            @endphp
+                            @foreach ($dc as $link)
+                                <li>
+                                    {{ $link['text'] }}
+                                </li>
+                            @endforeach
+                        </ul>
+                        <ul>
+                            <li class="list-item">SITES</li>
+                            @php
+                                $sites = config('sites');
+                            @endphp
+                            @foreach ($sites as $link)
+                                <li>
+                                    {{ $link['text'] }}
+                                </li>
+                            @endforeach
+                        </ul>
+                    </section>
+                    <section id="dc-img"></section>
                 </section>
-                <section id="dc-img"></section>
-            </section>
-            <section id="socials">
-                <footer class="container">
-                    <button>SIGN-UP NOW!</button>
-                    <span>
-                        <p>FOLLOW US</p>
-                        <img src="{{ asset('images/footer-facebook.png') }}" alt="" />
-                        <img src="{{ asset('images/footer-twitter.png') }}" alt="" />
-                        <img src="{{ asset('images/footer-youtube.png') }}" alt="" />
-                        <img src="{{ asset('images/footer-pinterest.png') }}" alt="" />
-                        <img src="{{ asset('images/footer-periscope.png') }}" alt="" />
-                    </span>
-                </footer>
-            </section>
+            </div>
+            <div id="footer-bottom">
+                <section id="socials">
+                    <div class="container">
+                        <button>SIGN-UP NOW!</button>
+                        <span>
+                            <p>FOLLOW US</p>
+                            <img src="{{ asset('images/footer-facebook.png') }}" alt="" />
+                            <img src="{{ asset('images/footer-twitter.png') }}" alt="" />
+                            <img src="{{ asset('images/footer-youtube.png') }}" alt="" />
+                            <img src="{{ asset('images/footer-pinterest.png') }}" alt="" />
+                            <img src="{{ asset('images/footer-periscope.png') }}" alt="" />
+                        </span>
+                    </div>
+                </section>
+            </div>
         </div>
     </footer>
     <script src="{{ asset('js/app.js') }}"></script>
