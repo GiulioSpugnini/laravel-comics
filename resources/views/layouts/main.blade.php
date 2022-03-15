@@ -6,20 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dc Comics | Home</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
-    <section class="container">
+    <header class="container">
         <figure>
-            <img src="" alt="" />
+            <img src="{{ asset('images/dc-logo.png') }}" alt="dc-logo" />
         </figure>
         <nav>
             <ul>
-                <li></li>
+                <li>
+                    @foreach ($links as $link)
+                        {{ $link }}
+                    @endforeach
+                </li>
             </ul>
         </nav>
-    </section>
+    </header>
     <main>
         <div id="content">
             <span id="current">CURRENT SERIES</span>
@@ -45,7 +49,7 @@
             </section>
         </div>
     </main>
-    <script src="{{asset('js/app.js')}}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>

@@ -1,0 +1,26 @@
+div {
+    background-color: #fff;
+}
+figure,
+nav {
+    margin: 0;
+    text-align: center;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 150px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            list-style: none;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bolder;
+        }
+    }
+}
