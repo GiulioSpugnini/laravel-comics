@@ -16,11 +16,11 @@
         </figure>
         <nav>
             <ul>
-                <li>
-                    @foreach ($links as $link)
+                @foreach ($links as $link)
+                    <li>
                         {{ $link }}
-                    @endforeach
-                </li>
+                    </li>
+                @endforeach
             </ul>
         </nav>
     </header>
@@ -31,10 +31,12 @@
             <section class="container">
                 <section>
                     <ul id="cards">
-                        <li class="card-game">
-                            <img src="product.thumb" alt="" />
-                            <p></p>
-                        </li>
+                        @foreach ($products as $product)
+                            <li class="card-game">
+                                <img src="{{ asset($product['thumb']) }}" alt="" />
+                                <p>{{ $product['series'] }}</p>
+                            </li>
+                        @endforeach
                     </ul>
                     <span id="load-button"><button><strong>LOAD MORE</strong></button></span>
                 </section>

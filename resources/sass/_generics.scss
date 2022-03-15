@@ -22,3 +22,46 @@ header {
         }
     }
 }
+#jumbo {
+    min-height: 400px;
+    background-image: url("../images/jumbotron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+main {
+    #cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card-game {
+            width: calc(100% / 6);
+            list-style: none;
+            color: white;
+            margin-top: 60px;
+            p {
+                padding-top: 10px;
+                font-size: 15px;
+                word-wrap: break-word;
+            }
+        }
+    }
+    .card-game img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: -100% 0;
+    }
+    #load-button {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        button {
+            background-color: #0282f9;
+            color: white;
+            padding: 10px 5px 10px 5px;
+            border: 0;
+            width: 200px;
+        }
+    }
+}

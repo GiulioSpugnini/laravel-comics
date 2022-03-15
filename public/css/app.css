@@ -11267,3 +11267,48 @@ header ul li {
   padding: 10px;
   font-weight: bolder;
 }
+
+#jumbo {
+  min-height: 400px;
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+main #cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main #cards .card-game {
+  width: 16.6666666667%;
+  list-style: none;
+  color: white;
+  margin-top: 60px;
+}
+main #cards .card-game p {
+  padding-top: 10px;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+main .card-game img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -100% 0;
+     object-position: -100% 0;
+}
+main #load-button {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+main #load-button button {
+  background-color: #0282f9;
+  color: white;
+  padding: 10px 5px 10px 5px;
+  border: 0;
+  width: 200px;
+}

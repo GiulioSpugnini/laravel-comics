@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $links = ['CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP'];
-    return view('layouts.main', ['links' => $links]);
+    $products = config('comics');
+    return view('layouts.main', ['links' => $links], ['products' => $products]);
 })->name('home');
