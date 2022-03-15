@@ -27,22 +27,24 @@
     </header>
     {{-- MAIN --}}
     <main>
-        <div id="content">
-            <span id="current">CURRENT SERIES</span>
-            <section id="jumbo"></section>
-            <section class="container">
-                <section>
-                    <ul id="cards">
-                        @foreach ($products as $product)
-                            <li class="card-game">
-                                <img src="{{ asset($product['thumb']) }}" alt="" />
-                                <p>{{ $product['series'] }}</p>
-                            </li>
-                        @endforeach
-                    </ul>
-                    <span id="load-button"><button><strong>LOAD MORE</strong></button></span>
+        <div class="main-content">
+            <div id="content">
+                <span id="current">CURRENT SERIES</span>
+                <section id="jumbo"></section>
+                <section class="container">
+                    <section>
+                        <ul id="cards">
+                            @foreach ($products as $product)
+                                <li class="card-game">
+                                    <img src="{{ asset($product['thumb']) }}" alt="" />
+                                    <p>{{ $product['series'] }}</p>
+                                </li>
+                            @endforeach
+                        </ul>
+                        <span id="load-button"><button><strong>LOAD MORE</strong></button></span>
+                    </section>
                 </section>
-            </section>
+            </div>
         </div>
         <div id="main-footer-container">
             <section class="container" id="figures">
