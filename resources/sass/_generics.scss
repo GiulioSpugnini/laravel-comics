@@ -190,18 +190,18 @@ footer {
             text-align: center;
             line-height: 5px;
         }
-    }
-}
-span {
-    display: flex;
-    align-items: center;
-    p {
-        color: #0282f9;
-        padding-right: 10px;
-        font-size: 20px;
-        font-weight: 800;
-    }
-    img {
-        padding-right: 10px;
+        .icons {
+            display: flex;
+            align-items: center;
+            p {
+                color: #0282f9;
+                padding-right: 10px;
+                font-size: 20px;
+                font-weight: 800;
+            }
+            img {
+                padding-right: 10px;
+            }
+        }
     }
 }

@@ -11436,17 +11436,16 @@ footer #shop {
   text-align: center;
   line-height: 5px;
 }
-
-span {
+#footer-bottom #socials .icons {
   display: flex;
   align-items: center;
 }
-span p {
+#footer-bottom #socials .icons p {
   color: #0282f9;
   padding-right: 10px;
   font-size: 20px;
   font-weight: 800;
 }
-span img {
+#footer-bottom #socials .icons img {
   padding-right: 10px;
 }

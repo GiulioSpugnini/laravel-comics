@@ -113,14 +113,14 @@
                 <section id="socials">
                     <div class="container">
                         <button>SIGN-UP NOW!</button>
-                        <span>
+                        <div class="icons">
                             <p>FOLLOW US</p>
-                            <img src="{{ asset('images/footer-facebook.png') }}" alt="" />
-                            <img src="{{ asset('images/footer-twitter.png') }}" alt="" />
-                            <img src="{{ asset('images/footer-youtube.png') }}" alt="" />
-                            <img src="{{ asset('images/footer-pinterest.png') }}" alt="" />
-                            <img src="{{ asset('images/footer-periscope.png') }}" alt="" />
-                        </span>
+                            <img src="{{ asset('images/footer-facebookotto.png') }}" alt="icon" />
+                            <img src="{{ asset('images/footer-twitterotto.png') }}" alt="icon" />
+                            <img src="{{ asset('images/footer-youtube.png') }}" alt="icon" />
+                            <img src="{{ asset('images/footer-pinterest.png') }}" alt="icon" />
+                            <img src="{{ asset('images/footer-periscope.png') }}" alt="icon" />
+                        </div>
                     </div>
                 </section>
             </div>
