@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    {{-- HEADER --}}
     <header class="container">
         <figure>
             <img src="{{ asset('images/dc-logo.png') }}" alt="dc-logo" />
@@ -24,6 +25,7 @@
             </ul>
         </nav>
     </header>
+    {{-- MAIN --}}
     <main>
         <div id="content">
             <span id="current">CURRENT SERIES</span>
@@ -57,6 +59,49 @@
             </section>
         </div>
     </main>
+    {{-- FOOTER --}}
+    <footer>
+        <div>
+            <section class="container">
+                <section id="links">
+                    <ul>
+                        <li class="list-item">DC COMICS</li>
+                        <li></li>
+                        <li class="list-item">SHOP</li>
+                        <li>
+
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-item">DC</li>
+                        <li>
+
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="list-item">SITES</li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </section>
+                <section id="dc-img"></section>
+            </section>
+            <section id="socials">
+                <footer class="container">
+                    <button>SIGN-UP NOW!</button>
+                    <span>
+                        <p>FOLLOW US</p>
+                        <img src="{{ asset('images/footer-facebook.png') }}" alt="" />
+                        <img src="{{ asset('images/footer-twitter.png') }}" alt="" />
+                        <img src="{{ asset('images/footer-youtube.png') }}" alt="" />
+                        <img src="{{ asset('images/footer-pinterest.png') }}" alt="" />
+                        <img src="{{ asset('images/footer-periscope.png') }}" alt="" />
+                    </span>
+                </footer>
+            </section>
+        </div>
+    </footer>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 

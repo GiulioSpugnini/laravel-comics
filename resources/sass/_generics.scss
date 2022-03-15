@@ -1,3 +1,4 @@
+// header
 header {
     background-color: #fff;
     display: flex;
@@ -29,6 +30,7 @@ header {
     background-repeat: no-repeat;
     background-position: top;
 }
+// main
 main {
     #cards {
         display: flex;
@@ -83,6 +85,85 @@ main {
                 max-width: 50px;
                 padding-right: 10px;
             }
+        }
+    }
+}
+// footer
+footer {
+    div {
+        background-image: url("../images/footer-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #links {
+        padding: 10px 0 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        ul {
+            width: calc(100% / 3);
+        }
+        h3 {
+            color: white;
+        }
+    }
+
+    .list-item {
+        color: white;
+        font-size: 20px;
+        padding: 10px 0 10px 0;
+    }
+    li {
+        list-style: none;
+        color: gray;
+        padding-right: 20px;
+    }
+    #dc-img {
+        background-image: url("../assets/dc-logo-bg.png");
+        background-position: center;
+        display: flex;
+        min-width: 562px;
+    }
+    #shop {
+        padding: 10px 0 10px 0;
+        display: inline;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        #socials {
+            padding: 30px 0 30px 0;
+            background-color: #303030;
+            flex-basis: 100%;
+            height: 100px;
+            button {
+                background-color: #303030;
+                border: 2px solid #0282f9;
+                padding: 20px;
+                color: white;
+                text-align: center;
+                line-height: 5px;
+            }
+        }
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        p {
+            color: #0282f9;
+            padding-right: 10px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        img {
+            padding-right: 10px;
         }
     }
 }
