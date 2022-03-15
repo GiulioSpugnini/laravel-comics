@@ -66,23 +66,41 @@
                 <section id="links">
                     <ul>
                         <li class="list-item">DC COMICS</li>
-                        <li></li>
+                        @php
+                            $dc_comics = config('dc_comics');
+                        @endphp
+                        @foreach ($dc_comics as $link)
+                            <li>{{ $link['text'] }}</li>
+                        @endforeach
                         <li class="list-item">SHOP</li>
-                        <li>
-
-                        </li>
+                        @php
+                            $shop = config('shop');
+                        @endphp
+                        @foreach ($shop as $link)
+                            <li>{{ $link['text'] }}</li>
+                        @endforeach
                     </ul>
                     <ul>
                         <li class="list-item">DC</li>
-                        <li>
-
-                        </li>
+                        @php
+                            $dc = config('dc');
+                        @endphp
+                        @foreach ($dc as $link)
+                            <li>
+                                {{ $link['text'] }}
+                            </li>
+                        @endforeach
                     </ul>
                     <ul>
                         <li class="list-item">SITES</li>
-                        <li>
-
-                        </li>
+                        @php
+                            $sites = config('sites');
+                        @endphp
+                        @foreach ($sites as $link)
+                            <li>
+                                {{ $link['text'] }}
+                            </li>
+                        @endforeach
                     </ul>
                 </section>
                 <section id="dc-img"></section>
