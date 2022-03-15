@@ -44,10 +44,16 @@
         </div>
         <div id="main-footer-container">
             <section class="container" id="figures">
-                <figure>
-                    <img src="" alt="" />
+                @php
+                    $shop_items = config('shop_items');
+                @endphp
 
-                </figure>
+                @foreach ($shop_items as $shop_item)
+                    <figure>
+                        <img src="{{ asset($shop_item['url']) }}" alt="item" />
+                        {{ $shop_item['title'] }}
+                    </figure>
+                @endforeach
             </section>
         </div>
     </main>

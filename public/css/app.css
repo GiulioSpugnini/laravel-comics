@@ -11312,3 +11312,23 @@ main #load-button button {
   border: 0;
   width: 200px;
 }
+main #main-footer-container {
+  background-color: #0282f9;
+}
+main #main-footer-container #figures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #main-footer-container figure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  color: white;
+  padding: 30px 0 30px 0;
+}
+main #main-footer-container figure img {
+  max-width: 50px;
+  padding-right: 10px;
+}
