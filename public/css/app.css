@@ -11243,3 +11243,27 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 150px;
+}
+header figure,
+header nav {
+  margin: 0;
+  text-align: center;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+header ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bolder;
+}
