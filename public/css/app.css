@@ -11262,6 +11262,22 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.bg-top-header {
+  background-color: #0282f9;
+  padding: 10px;
+  color: #fff;
+}
+
+.top-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top-header a {
+  font-size: 10px;
+  padding-right: 10px;
+}
+
 header {
   background-color: #fff;
   display: flex;

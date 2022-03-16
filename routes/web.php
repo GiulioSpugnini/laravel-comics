@@ -14,7 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $links = ['CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP'];
-    $products = config('comics');
-    return view('layouts.main', ['links' => $links], ['products' => $products]);
+
+    $items = config('comics');
+    return view('home', compact('items'));
 })->name('home');
+
+Route::get('/items', function () {
+
+    $items = config('comics');
+
+    return view('items', compact('items'));
+})->name('items');
+
+Route::get('/items/{id}', function ($id) {
+
+    $items = config('comics');
+    $item = $items[$id];
+    return view('item', compact('item'));
+})->name('item');
