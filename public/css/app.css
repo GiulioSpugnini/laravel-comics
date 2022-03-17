@@ -11262,6 +11262,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .bg-top-header {
   background-color: #0282f9;
   padding: 10px;
@@ -11292,6 +11296,10 @@ header nav {
   margin: 0;
   text-align: center;
 }
+header figure a,
+header nav a {
+  color: black;
+}
 header ul {
   display: flex;
   justify-content: space-between;
@@ -11302,6 +11310,9 @@ header ul li {
   padding: 10px;
   font-weight: bolder;
 }
+header nav a:hover {
+  border-bottom: 2px solid #0282f9;
+}
 
 #jumbo {
   min-height: 400px;
@@ -11311,19 +11322,12 @@ header ul li {
   background-position: top;
 }
 
-main #content {
-  background-color: #1c1c1c;
-  padding: 0px 0 50px 0;
-}
-main #content h2, main #content .h2 {
-  color: white;
-}
 main .main-content {
   position: relative;
 }
 main #current {
   position: absolute;
-  top: 30%;
+  top: 90%;
   left: 12%;
   background-color: #0282f9;
   color: white;
@@ -11348,6 +11352,9 @@ main #cards .card-game p {
   padding-top: 10px;
   font-size: 15px;
   word-wrap: break-word;
+}
+main #cards .card-game a {
+  color: white;
 }
 main .card-game img {
   width: 200px;
@@ -11388,6 +11395,36 @@ main #main-footer-container figure {
 main #main-footer-container figure img {
   max-width: 50px;
   padding-right: 10px;
+}
+
+#bg-items {
+  background-color: #121212;
+}
+
+.comics-items {
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.comics-items .item-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.comics-items .item-container .info-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+.comics-items .advertisement {
+  display: flex;
+  flex-basis: 50%;
+}
+.comics-items .talent-specs {
+  display: flex;
+  flex-basis: 100%;
 }
 
 footer .bg-section {

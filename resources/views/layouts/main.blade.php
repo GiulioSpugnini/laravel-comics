@@ -19,7 +19,7 @@
     {{-- HEADER --}}
     <header class="container">
         <figure>
-            <img src="{{ asset('images/dc-logo.png') }}" alt="dc-logo" />
+            <a href="{{ route('home') }}"><img src="{{ asset('images/dc-logo.png') }}" alt="dc-logo" /></a>
         </figure>
         <nav>
             <ul>
@@ -28,7 +28,7 @@
                 @endphp
                 @foreach ($links as $link)
                     <li>
-                        {{ $link['text'] }}
+                        <a href="{{ route('items') }}">{{ $link['text'] }}</a>
                     </li>
                 @endforeach
             </ul>
@@ -37,15 +37,15 @@
     {{-- MAIN --}}
     <main>
         <div class="main-content">
-            <div id="content">
-                <span id="current">CURRENT SERIES</span>
-                <section id="jumbo"></section>
 
-
-                @yield('main-content')
-
-            </div>
+            @yield('current')
+            <section id="jumbo"></section>
         </div>
+
+
+        @yield('comics-items')
+
+
     </main>
     {{-- FOOTER --}}
     <footer>
