@@ -125,6 +125,38 @@ main {
             width: 200px;
         }
     }
+    .bg-item-container {
+        background-color: #f6f6f6;
+    }
+    #item-footer-container {
+        border-top: 1px solid gray;
+        #figures {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        figure {
+            border-left: 1px solid gray;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: gray;
+            flex-basis: 100%;
+            padding: 30px 5px 30px 5px;
+
+            img {
+                color: gray;
+                max-width: 50px;
+                padding-left: 10px;
+            }
+        }
+        figure:last-child {
+            border-right: 1px solid gray;
+        }
+    }
     #main-footer-container {
         background-color: #0282f9;
         #figures {

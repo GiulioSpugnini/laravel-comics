@@ -36,4 +36,19 @@
             </div>
         </div>
     </div>
+    <div class="bg-item-footer">
+        <div id="item-footer-container">
+            <section class="container" id="figures">
+                @php
+                    $shop_items = config('shop_item_footer');
+                @endphp
+                @foreach ($shop_items as $shop_item)
+                    <figure>
+                        <h6>{{ $shop_item['title'] }}</h6>
+                        <img src="{{ asset($shop_item['url']) }}" alt="item" />
+                    </figure>
+                @endforeach
+            </section>
+        </div>
+    </div>
 @endsection

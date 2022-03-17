@@ -11376,6 +11376,37 @@ main #load-button button {
   border: 0;
   width: 200px;
 }
+main .bg-item-container {
+  background-color: #f6f6f6;
+}
+main #item-footer-container {
+  border-top: 1px solid gray;
+}
+main #item-footer-container #figures {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #item-footer-container figure {
+  border-left: 1px solid gray;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  flex-basis: 100%;
+  padding: 30px 5px 30px 5px;
+}
+main #item-footer-container figure img {
+  color: gray;
+  max-width: 50px;
+  padding-left: 10px;
+}
+main #item-footer-container figure:last-child {
+  border-right: 1px solid gray;
+}
 main #main-footer-container {
   background-color: #0282f9;
 }
