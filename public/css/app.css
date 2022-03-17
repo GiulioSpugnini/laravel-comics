@@ -11401,30 +11401,36 @@ main #main-footer-container figure img {
   background-color: #121212;
 }
 
-.comics-items {
+.item-container {
   color: black;
+  margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.comics-items .item-container {
   max-width: 1200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
-.comics-items .item-container .info-item {
+.item-container .info-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   flex-basis: 50%;
 }
-.comics-items .advertisement {
+
+.advertisement {
   display: flex;
+  justify-content: center;
   flex-basis: 50%;
 }
-.comics-items .talent-specs {
+
+.talent-specs {
   display: flex;
+  justify-content: center;
   flex-basis: 100%;
+}
+
+.w-50 {
+  flex-basis: 50%;
 }
 
 footer .bg-section {

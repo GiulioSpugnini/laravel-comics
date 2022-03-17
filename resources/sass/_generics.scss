@@ -151,32 +151,37 @@ main {
 #bg-items {
     background-color: #121212;
 }
-.comics-items {
+
+.item-container {
     color: black;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    .item-container {
-        max-width: 1200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
 
-        .info-item {
-            display: flex;
-            flex-direction: column;
-            flex-basis: 50%;
-        }
-    }
-    .advertisement {
+    .info-item {
         display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         flex-basis: 50%;
     }
-    .talent-specs {
-        display: flex;
-        flex-basis: 100%;
-    }
 }
+.advertisement {
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+}
+.talent-specs {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+.w-50 {
+    flex-basis: 50%;
+}
+
 // footer
 footer {
     .bg-section {
