@@ -2,37 +2,42 @@
 
 @section('comics-items')
     <div class="item-container" id="bg-item">
+        <div id="item-cover">
+            <img src="{{ $item['thumb'] }}" alt="cover">
+        </div>
         <div class="info-item">
-            <h3>
+            <h3 class="fw-bolder">
                 {{ $item['title'] }}
             </h3>
-            <div>
-                {{ $item['price'] }}
+            <div class="bg-green my-2 p-3 text-light">
+                U.S Price: {{ $item['price'] }}
             </div>
-            <p> {{ $item['description'] }} </p>
+            <p class="fw-bolder"> {{ $item['description'] }} </p>
         </div>
         <div class="advertisement">
             <img src="{{ asset('images/advs.jpg') }}" alt="adv">
         </div>
+    </div>
+    <div class="bg-talent-specs">
         <div class="talent-specs">
             <div class="w-50">
-                <h5>Talent</h5>
-                <h6>Art by:
+                <h5 class="fw-bolder py-3">Talent</h5>
+                <h6 class="fw-bolder border-top py-2">Art by:
                     @foreach ($item['artists'] as $artist)
                         {{ $artist }}
                     @endforeach
                 </h6>
-                <h6>Written by:
+                <h6 class="fw-bolder border-top">Written by:
                     @foreach ($item['writers'] as $writers)
                         {{ $writers }}
                     @endforeach
                 </h6>
             </div>
-            <div class="w-50">
-                <h5>Specs</h5>
-                <h6>Series: {{ $item['series'] }} </h6>
-                <h6>U.S Price: {{ $item['price'] }} </h6>
-                <h6>On Sale Date: {{ $item['sale_date'] }} </h6>
+            <div class="w-50 mx-3">
+                <h5 class="fw-bolder py-3">Specs</h5>
+                <h6 class="fw-bolder border-top py-2">Series: {{ $item['series'] }} </h6>
+                <h6 class="fw-bolder border-top py-2">U.S Price: {{ $item['price'] }} </h6>
+                <h6 class="fw-bolder border-top py-2">On Sale Date: {{ $item['sale_date'] }} </h6>
             </div>
         </div>
     </div>

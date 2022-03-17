@@ -125,7 +125,7 @@ main {
             width: 200px;
         }
     }
-    .bg-item-container {
+    .bg-item-footer {
         background-color: #f6f6f6;
     }
     #item-footer-container {
@@ -183,8 +183,14 @@ main {
 #bg-items {
     background-color: #121212;
 }
-
+#item-cover {
+    position: absolute;
+    top: -350px;
+    left: 0%;
+    border: 1px solid white;
+}
 .item-container {
+    position: relative;
     color: black;
     margin: 0 auto;
     margin-top: 20px;
@@ -205,13 +211,23 @@ main {
     justify-content: center;
     flex-basis: 50%;
 }
+.bg-talent-specs {
+    background-color: #f6f6f6;
+}
+.bg-green {
+    background-color: #55ba59;
+}
 .talent-specs {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-basis: 100%;
 }
 .w-50 {
     flex-basis: 50%;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 // footer

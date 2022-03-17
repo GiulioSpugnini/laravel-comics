@@ -11376,7 +11376,7 @@ main #load-button button {
   border: 0;
   width: 200px;
 }
-main .bg-item-container {
+main .bg-item-footer {
   background-color: #f6f6f6;
 }
 main #item-footer-container {
@@ -11432,7 +11432,15 @@ main #main-footer-container figure img {
   background-color: #121212;
 }
 
+#item-cover {
+  position: absolute;
+  top: -350px;
+  left: 0%;
+  border: 1px solid white;
+}
+
 .item-container {
+  position: relative;
   color: black;
   margin: 0 auto;
   margin-top: 20px;
@@ -11454,7 +11462,17 @@ main #main-footer-container figure img {
   flex-basis: 50%;
 }
 
+.bg-talent-specs {
+  background-color: #f6f6f6;
+}
+
+.bg-green {
+  background-color: #55ba59;
+}
+
 .talent-specs {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-basis: 100%;
@@ -11462,6 +11480,8 @@ main #main-footer-container figure img {
 
 .w-50 {
   flex-basis: 50%;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 footer .bg-section {
