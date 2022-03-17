@@ -100,7 +100,7 @@
                     <div class="container">
                         <button>SIGN-UP NOW!</button>
                         <div class="icons">
-                            <p>FOLLOW US</p>
+                            <p class="m-0">FOLLOW US</p>
                             <img src="{{ asset('images/footer-facebookotto.png') }}" alt="icon" />
                             <img src="{{ asset('images/footer-twitterotto.png') }}" alt="icon" />
                             <img src="{{ asset('images/footer-youtube.png') }}" alt="icon" />
